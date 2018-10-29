@@ -6,7 +6,7 @@ import Nav from '../components/Nav';
 import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 
-class Search extends Component {
+class Saved extends Component {
 
   state = {
     saved: []
@@ -33,13 +33,8 @@ class Search extends Component {
       <div>
         <Container>
           <Jumbotron>
-            <h1 className="text-center"><strong><i className="fa fa-newspaper-o"></i> Saved NYT Articles</strong></h1>
+            <h1 className="text-center"><strong> Saved NYT Articles</strong></h1>
           </Jumbotron>
-          <Row>
-            <Col size="md-12">
-              <Nav />
-            </Col>
-          </Row>
           <Row>
             <Col size="md-12">
               <br />
@@ -59,4 +54,4 @@ class Search extends Component {
   }
 }
 
-export default Search;
+export default Saved;

@@ -1,8 +1,12 @@
+//Dependencies
 const express = require("express");
-
 const mongoose = require("mongoose");
 const routes = require("./routes");
+
+//Tie app to express
 const app = express();
+
+//Server Set Up
 const PORT = process.env.PORT || 3001;
 
 // Define middleware here
@@ -16,9 +20,9 @@ if (process.env.NODE_ENV === "production") {
 app.use(routes);
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reactscraper");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/reactnytscraper");
 
 // Start the API server
 app.listen(PORT, function() {
-  console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
+  console.log(`API Server now listening on PORT ${PORT}!`);
 });

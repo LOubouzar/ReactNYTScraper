@@ -3,20 +3,18 @@ import { Col, Row, Container } from "../components/Grid";
 import Jumbotron from "../components/Jumbotron";
 
 const NoMatch = () => (
-  <Container fluid>
-    <Row>
-      <Col size="md-12">
-        <Jumbotron>
-          <h1>404 Page Not Found</h1>
-          <h1>
-            <span role="img" aria-label="Face With Rolling Eyes Emoji">
-              🙄
-            </span>
-          </h1>
-        </Jumbotron>
-      </Col>
-    </Row>
-  </Container>
+  <div>
+    <Jumbotron>
+      <h1 className="text-center"><strong> Saved NYT Articles</strong></h1>
+    </Jumbotron>
+    <Container fluid>
+      <Row>
+        <Col size="md-12">
+          <h1 className="text-center">No Articles Matched</h1>
+        </Col>
+      </Row>
+    </Container>
+  </div>
 );
 
 export default NoMatch;
