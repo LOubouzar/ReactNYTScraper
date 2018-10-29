@@ -2,7 +2,7 @@ import axios from "axios";
 
 export default {
   queryNYT: function (query) {
-    return axios.get('/api/article/query', { params: { q: query } });
+    return axios.get('/api/article/query', { params: query });
   },
 
   getSaved: function () {

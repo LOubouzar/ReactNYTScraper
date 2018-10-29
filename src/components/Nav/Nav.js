@@ -1,12 +1,11 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./Nav.css";
 
 const Nav = () => (
-  <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-    <a className="navbar-brand" href="/">
-      NYT Article Historian
-    </a>
-    <a class="fab fa-github" href=">    
-    </a>
+  <nav className="navbar navbar-expand-lg navbar-light">
+    <a className="navbar-brand" href="/"><strong>NYT Article Historian</strong></a>
+    <a className="d-inline-flex justify-content-end" href="https://github.com/LOubouzar/ReactNYTScraper"><FontAwesomeIcon icon={["fab", "github"]} /></a>
   </nav>
 );
 

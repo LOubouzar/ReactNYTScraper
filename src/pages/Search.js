@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
+import "./pages.css"
 
 class Search extends Component {
   state = {
@@ -43,7 +44,7 @@ class Search extends Component {
           {/* Search Query Container Row */}
           <Row>
             <Col size="md-12">
-              <h3 className="searchTitle"><strong>Search</strong></h3>
+              <h3 className="title"><strong>Search</strong></h3>
               <form>
                 <Input
                   value={this.state.searchQuery}
@@ -55,13 +56,13 @@ class Search extends Component {
                 value={this.state.startDate}
                 onChange={this.handleInputChange}
                 name="startDate"
-                placeholder="Start Date"
+                placeholder="Beginning Date"
                 />
                 <Input
                 value={this.state.endDate}
                 onChange={this.handleInputChange}
                 name="endDate"
-                placeholder="End Date"
+                placeholder="Ending Date"
                 />
                 <FormBtn
                   disabled={!(this.state.searchQuery)}
@@ -73,7 +74,7 @@ class Search extends Component {
             {/* Search Results Container Row */}
           <Row>
             <Col size='md-12'>
-                <h3 className="panel-title"><strong>Top Articles</strong></h3>
+                <h3 className="title"><strong>Top Articles</strong></h3>
                 <List>
                   {this.state.results.map(article => (
                     <ListItem key={article._id}>

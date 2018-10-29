@@ -4,6 +4,12 @@ import Search from "./pages/Search";
 import Save from "./pages/Save";
 import NoMatch from "./pages";
 import Nav from "./components/Nav";
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { fabGithub } from '@fortawesome/free-solid-svg-icons'
+
+library.add(fab)
 
 const App = () => (
   <Router>
