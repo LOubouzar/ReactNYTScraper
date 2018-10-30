@@ -9,6 +9,11 @@ const app = express();
 //Server Set Up
 const PORT = process.env.PORT || 3001;
 
+//Node/Server Set up Test for Port 3001
+app.get('/', (req, res) => {
+  res.send(`Node Server Connected on PORT ${PORT}!`);
+});
+
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());

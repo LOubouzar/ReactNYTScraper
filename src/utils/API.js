@@ -2,7 +2,7 @@ import axios from "axios";
 
 export default {
   queryNYT: function (query) {
-    return axios.get('/api/article/query', { params: query });
+    return axios.get('/query', { params: query });
   },
 
   getSaved: function () {
@@ -17,3 +17,4 @@ export default {
     return axios.post('/api/saved', article)
   }
 };
+//Need to add in object filter to remove spaces and other nonsense
