@@ -1,7 +1,7 @@
-# New York Time Article Historian
+# New York Times Article Historian
 
 ## About
-This is a MERN application utilizing the New York Time public API to allow users to view any article by topic they wish going back to 1851. The user can save any interesting articles they wish to view later.
+This is a MERN application utilizing the New York Times public API to allow users to view any article by topic they wish going back to 1851. The user can save any interesting articles they want to view later.
 
 ## Technology
 * MongoDB/Mongoose
