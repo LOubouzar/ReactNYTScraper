@@ -24,6 +24,7 @@ class Search extends Component {
   handleFormSubmit = event => {
     event.preventDefault();
     API.queryNYT(this.state.searchQuery)
+    // console.log(this.state.searchQuery)
     .then(res => this.setState({results: res.data}))
     .catch(err => console.log(err))
   }
@@ -76,12 +77,13 @@ class Search extends Component {
             <Col size='md-12'>
                 <h3 className="title"><strong>Top Articles</strong></h3>
                 <List>
-                  {this.state.results.map(article => (
+                  
+                  {/* {this.state.results.map(article => (
                     <ListItem key={article._id}>
                       <a href={article.web_url}>{article.headline.main}</a>
                       <SaveBtn onClick={() => this.saveArticle(article)} />
                     </ListItem>
-                  ))}
+                  ))} */}
                 </List>
             </Col>
           </Row>

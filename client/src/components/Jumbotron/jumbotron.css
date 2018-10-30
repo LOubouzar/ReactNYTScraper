@@ -3,9 +3,9 @@
     clear: "both";
     padding-Top: 120;
     text-Align: "center";
-    color: black;
-    text-shadow: 5px 2px rgb(255, 255, 255);
-    background-image: url("./2017-06-21-new-york-times-issue-1.png");
+    color: white;
+    text-shadow: 5px 2px black;
+    background-image: url("./Beginning-in-1928-news-bulletins-flashed-on-an-electric-zipper-in-Times-Square-The-New-York-Times-Photo-Archives3.jpg");
     background-size: cover;
     font-size: 100px;
 }
