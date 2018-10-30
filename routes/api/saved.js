@@ -3,7 +3,7 @@ const router = require("express").Router();
 const articleController = require("../../controllers/articleController");
 
 router
-	.route("/")
+	.route("*")
 	.get(articleController.findAll)
 	.post(articleController.create);
 
